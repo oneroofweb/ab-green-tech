@@ -792,3 +792,53 @@
 .footer-bottom a:hover {
     color: #fff;
 }
+
+/* 
+=============================================
+Floating Action Buttons (WhatsApp & Call)
+============================================= 
+*/
+        .floating-action-menu {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Creates the slight gap between buttons */
+            z-index: 9999; /* Ensures it stays on top of all other content */
+        }
+
+        .floating-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: #fff;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+            color: black;
+        }
+
+        .btn-call-floating {
+            background-color: var(--primary-navy); /* Matches your theme */
+        }
+
+        .btn-whatsapp-floating {
+            background-color: #25D366; /* Official WhatsApp Green */
+        }
+
+        /* Adjust position slightly for smaller mobile screens */
+        @media (max-width: 768px) {
+            .floating-action-menu {
+                bottom: 20px;
+                right: 20px;
+            }
+        }
