@@ -4,6 +4,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+@media only screen and (max-width: 768px){
+    html,
+    body{
+    width:100%;
+    overflow-x: hidden;
+    }
+}
+
 .sec-color{
     background-color: #F8F9FA !important;
 }
@@ -103,7 +112,14 @@
         .hero-carousel, .carousel-inner, .carousel-item {
             height: 90vh; /* Full viewport height */
             width: 100%;  /* Full viewport width */
-            min-height: 500px; /* Prevents it from getting too squished on very short screens */
+            min-height: 300px; /* Prevents it from getting too squished on very short screens */
+        }
+
+        @media (max-width: 768px) {
+             .hero-carousel, .carousel-inner, .carousel-item{
+                min-height: 300px !important;
+                 height: 40vh;
+             }
         }
 
         .carousel-item {
@@ -206,6 +222,21 @@
             width: 100%;  /* Full viewport width */
             min-height: 500px; /* Prevents it from getting too squished on very short screens */
         }
+        .z-3{
+            display: none !important;
+        }
+        }
+        .carousel-control-next-icon{
+            right: 0px !important;
+            position: absolute;
+            background-color: #D68910;
+            padding: 40px 5px !important;
+        }
+        .carousel-control-prev-icon{
+            left: 0px !important;
+            position: absolute;
+            background-color: #D68910;
+            padding: 40px 5px !important;
         }
 
 
@@ -842,3 +873,49 @@ Floating Action Buttons (WhatsApp & Call)
                 right: 20px;
             }
         }
+
+/* 
+=============================================
+Detail Page CSS
+============================================= 
+*/
+
+/* ============================================ 
+   Detail Page Specific Styles 
+   ============================================ */
+
+/* Hero Section Styling */
+.page-hero {
+    /* Fallback background color */
+    background-color: var(--ab-green); 
+    /* Add an actual background image URL here when ready */
+    background-image: url('https://picsum.photos/1920/600?random=3');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dark Green Overlay for Hero Text Readability */
+.hero-overlay {
+    background: rgba(20, 108, 54, 0.85); /* Uses your AB Green color with 85% opacity */
+}
+
+/* Breadcrumb Styling */
+.page-hero .breadcrumb-item + .breadcrumb-item::before {
+    content: "›"; /* Changes default slash to a nice arrow */
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.page-hero .breadcrumb-item a:hover {
+    color: var(--ab-orange) !important;
+}
+
+/* Image Hover Effect for Content Blocks */
+.image-wrapper img {
+    transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
