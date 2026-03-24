@@ -1,639 +1,847 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AB Green Tech | Complete Website</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AB Green Tech | Complete Website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <!-- ================== Header Section ================ -->
-     <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+  <!-- ================== Header Section ================ -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
     <div class="container">
-        
-        <a class="navbar-brand" href="index.html">
-            <img src="images/ABGreenTech_logo.jpg" alt="AB Greenteck Logo" height="60" width="auto">
-        </a>
+      <a class="navbar-brand" href="index.html">
+        <img src="images/ABGreenTech_logo.jpg" alt="AB Greenteck Logo" height="60" width="auto" />
+      </a>
 
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="servicesDropdown">
-                        <li><a class="dropdown-item" href="construction.html">Construction</a></li>
-                        <li><a class="dropdown-item" href="#">Green Technologies</a></li>
-                        <li><a class="dropdown-item" href="#">Consulting</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="servicesDropdown">
+              <li>
+                <a class="dropdown-item" href="construction.html">Construction</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Green Technologies</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Consulting</a></li>
             </ul>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="d-none d-lg-block">
-            <a href="contact.html" class="btn btn-ab-theme">Get a Quote</a>
-        </div>
-        
+      <div class="d-none d-lg-block">
+        <a href="contact.html" class="btn btn-ab-theme">Get a Quote</a>
+      </div>
     </div>
-</nav>
+  </nav>
 
-    <!-- ================== Hero Slider =================== -->
+  <!-- ================== Hero Slider =================== -->
 
-    <section id="mainHeroSlider" class="carousel slide carousel-fade hero-carousel hero-section" data-bs-ride="carousel" data-bs-interval="4000">
-        
-        <div class="carousel-indicators z-3">
-            <button type="button" data-bs-target="#mainHeroSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#mainHeroSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#mainHeroSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#mainHeroSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  <section id="mainHeroSlider" class="carousel slide carousel-fade hero-carousel hero-section" data-bs-ride="carousel"
+    data-bs-interval="4000">
+    <div class="carousel-indicators z-3">
+      <button type="button" data-bs-target="#mainHeroSlider" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#mainHeroSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#mainHeroSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#mainHeroSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="
+            background-image: url(&quot;https://blurain.in/wp-content/uploads/2024/10/slider-4.webp&quot;);
+          ">
+        <div class="carousel-overlay"></div>
+        <div
+          class="container carousel-content d-flex flex-column justify-content-center align-items-center text-center">
+          <h1 class="hero-heading mb-4">MISTING & COOLING</h1>
+          <h5 class="hero-subheading mb-3">
+            Fogging System | Misting System | Special Effects.
+          </h5>
+
+          <a href="#" class="btn btn-hero mt-2">Read More</a>
         </div>
+      </div>
 
-        <div class="carousel-inner">
-            
-            <div class="carousel-item active" style="background-image: url('https://blurain.in/wp-content/uploads/2024/10/slider-4.webp');">
-                <div class="carousel-overlay"></div>
-                <div class="container carousel-content d-flex flex-column justify-content-center align-items-center text-center">
-                    <h1 class="hero-heading mb-4">MISTING & COOLING</h1>
-                    <h5 class="hero-subheading mb-3">Fogging System | Misting System | Special Effects.     </h5>
+      <div class="carousel-item" style="
+            background-image: url(&quot;https://blurain.in/wp-content/uploads/2024/10/slider-1.webp&quot;);
+          ">
+        <div class="carousel-overlay"></div>
+        <div
+          class="container carousel-content d-flex flex-column justify-content-center align-items-center text-center">
+          <h1 class="hero-heading mb-4">SMART IRRIGATION SYSTEM</h1>
+          <h5 class="hero-subheading mb-3">
+            Wi-Fi sprinkler controller that automatically adjust irrigation
+            schedule. Easy Monitoring with smartphone, Tablet or Computer.
+          </h5>
+          <a href="#" class="btn btn-hero mt-2">Read More</a>
+        </div>
+      </div>
 
-                    <a href="#" class="btn btn-hero mt-2">Read More</a>
+      <div class="carousel-item" style="
+            background-image: url(&quot;https://blurain.in/wp-content/uploads/2024/10/slider-2.webp&quot;);
+          ">
+        <div class="carousel-overlay"></div>
+        <div
+          class="container carousel-content d-flex flex-column justify-content-center align-items-center text-center">
+          <h1 class="hero-heading mb-4">WATER FEATURE & FOUNTAINS</h1>
+          <h5 class="hero-subheading mb-3">
+            Wow water features made of Fountain Nozzles & submersible LED
+            lights.
+          </h5>
+          <a href="#" class="btn btn-hero mt-2">Read More</a>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="
+            background-image: url(&quot;https://blurain.in/wp-content/uploads/2024/10/slider-3.webp&quot;);
+          ">
+        <div class="carousel-overlay"></div>
+        <div
+          class="container carousel-content d-flex flex-column justify-content-center align-items-center text-center">
+          <h1 class="hero-heading mb-4">POOL DESIGN & CONSTRUCTION</h1>
+          <h5 class="hero-subheading mb-3">
+            Filtration | Pumps | Heating | Lighting
+          </h5>
+
+          <a href="#" class="btn btn-hero mt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev z-3" type="button" data-bs-target="#mainHeroSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next z-3" type="button" data-bs-target="#mainHeroSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+
+  <!-- ====================== Service Card Section ======================= -->
+
+  <section class="py-5" id="real-estate-projects">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2>CHOOSE THE SERVICES</h2>
+        <div style="
+              width: 60px;
+              height: 3px;
+              background-color: var(--accent-gold);
+              margin: 15px auto;
+            "></div>
+        <p class="text-muted">OUR CORE EXPERTISE</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card project-card h-100 shadow-sm border-0">
+            <div id="projectCarousel1" class="carousel slide card-img-top overflow-hidden" data-bs-ride="carousel">
+              <div class="carousel-indicators custom-small-dots d-flex justify-content-center">
+                <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Errigasin sprinkler-2.jpeg" class="slider-img" alt="Smart Irrigation 1" />
                 </div>
-            </div>
-
-            <div class="carousel-item" style="background-image: url('https://blurain.in/wp-content/uploads/2024/10/slider-1.webp');">
-                <div class="carousel-overlay"></div>
-                <div class="container carousel-content d-flex flex-column justify-content-center align-items-center text-center">
-                    <h1 class="hero-heading mb-4">SMART IRRIGATION SYSTEM</h1>
-                    <h5 class="hero-subheading mb-3">Wi-Fi sprinkler controller that automatically adjust irrigation schedule. Easy Monitoring with smartphone, Tablet or Computer.</h5>
-                    <a href="#" class="btn btn-hero mt-2">Read More</a>
+                <div class="carousel-item">
+                  <img src="images/Errigasin sprinkler-3.jpeg" class="slider-img" alt="Smart Irrigation 2" />
                 </div>
-            </div>
-
-            <div class="carousel-item" style="background-image: url('https://blurain.in/wp-content/uploads/2024/10/slider-2.webp');">
-                <div class="carousel-overlay"></div>
-                <div class="container carousel-content d-flex flex-column justify-content-center align-items-center text-center">
-                    <h1 class="hero-heading mb-4">WATER FEATURE & FOUNTAINS</h1>
-                    <h5 class="hero-subheading mb-3">Wow water features made of Fountain Nozzles & submersible LED lights.</h5>
-                    <a href="#" class="btn btn-hero mt-2">Read More</a>
+                <div class="carousel-item">
+                  <img src="images/Errigasin sprinkler.jpeg" class="slider-img" alt="Smart Irrigation 3" />
                 </div>
+              </div>
+
+              <button class="carousel-control-prev custom-carousel-arrow" type="button"
+                data-bs-target="#projectCarousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next custom-carousel-arrow" type="button"
+                data-bs-target="#projectCarousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="card-title fw-bold">
+                Smart Irrigation & Automation Sprinkler Systems
+              </h5>
+              <p class="card-text text-muted mb-4">
+                Smart sprinkler and irrigation systems for parks and
+                landscapes, ensuring precise watering, water conservation, and
+                healthy green environments.
+              </p>
 
-            <div class="carousel-item" style="background-image: url('https://blurain.in/wp-content/uploads/2024/10/slider-3.webp');">
-                <div class="carousel-overlay"></div>
-                <div class="container carousel-content d-flex flex-column justify-content-center align-items-center text-center">
-                    <h1 class="hero-heading mb-4">POOL DESIGN & CONSTRUCTION</h1>
-                    <h5 class="hero-subheading mb-3">Filtration | Pumps | Heating | Lighting</h5>
+              <div class="d-flex gap-2 mt-auto">
+                <a href="/details.html"
+                  class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center"
+                  style="padding: 8px 5px; font-size: 0.9rem">
+                  Read More
+                </a>
 
-                    <a href="#" class="btn btn-hero mt-2">Read More</a>
+                <div class="w-50 d-flex gap-2">
+                  <a href="tel:+919876543210"
+                    class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center"
+                    style="padding: 8px 0; font-size: 1.1rem" title="Call Us">
+                    <i class="fas fa-phone"></i>
+                  </a>
+
+                  <a href="https://wa.me/919876543210" target="_blank"
+                    class="btn btn-theme w-50 d-flex align-items-center justify-content-center"
+                    style="padding: 8px 0; font-size: 1.2rem" title="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
                 </div>
+              </div>
             </div>
-
+          </div>
         </div>
 
-        <button class="carousel-control-prev z-3" type="button" data-bs-target="#mainHeroSlider" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next z-3" type="button" data-bs-target="#mainHeroSlider" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </section>
+        <div class="col-md-4">
+          <div class="card project-card h-100 shadow-sm border-0">
+            <div id="projectCarousel2" class="carousel slide card-img-top overflow-hidden" data-bs-ride="carousel">
+              <div class="carousel-indicators custom-small-dots d-flex justify-content-center">
+                <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
 
-<!-- ====================== Service Card Section ======================= -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Pool.jpeg" class="slider-img" alt="Landscaping Project 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Modern Pool.jpeg" class="slider-img" alt="Landscaping Project 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Errigasin sprinkler-2.jpeg" class="slider-img" alt="Landscaping Project 3" />
+                </div>
+              </div>
 
-<section class="py-5" id="real-estate-projects">
-<div class="container py-4">
-    <div class="text-center mb-5">
-      <h2>CHOOSE THE SERVICES</h2>
-      <div style="width: 60px; height: 3px; background-color: var(--accent-gold); margin: 15px auto;"></div>
-      <p class="text-muted">OUR CORE EXPERTISE</p>
+              <button class="carousel-control-prev custom-carousel-arrow" type="button"
+                data-bs-target="#projectCarousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next custom-carousel-arrow" type="button"
+                data-bs-target="#projectCarousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="card-title fw-bold">
+                Water Fountain Design & Installation
+              </h5>
+              <p class="card-text text-muted mb-4">
+                Creative fountain design and installation for parks, gardens,
+                and commercial spaces, delivering stunning water effects with
+                modern, durable systems.
+              </p>
+
+              <div class="d-flex gap-2 mt-auto">
+                <a href="/details.html"
+                  class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center"
+                  style="padding: 8px 5px; font-size: 0.9rem">
+                  Read More
+                </a>
+
+                <div class="w-50 d-flex gap-2">
+                  <a href="tel:+919876543210"
+                    class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center"
+                    style="padding: 8px 0; font-size: 1.1rem" title="Call Us">
+                    <i class="fas fa-phone"></i>
+                  </a>
+
+                  <a href="https://wa.me/919876543210" target="_blank"
+                    class="btn btn-theme w-50 d-flex align-items-center justify-content-center"
+                    style="padding: 8px 0; font-size: 1.2rem" title="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card project-card h-100 shadow-sm border-0">
+            <div id="projectCarousel3" class="carousel slide card-img-top overflow-hidden" data-bs-ride="carousel">
+              <div class="carousel-indicators custom-small-dots d-flex justify-content-center">
+                <button type="button" data-bs-target="#projectCarousel3" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#projectCarousel3" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#projectCarousel3" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Pool.jpeg" class="slider-img" alt="Landscaping Project 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Modern Pool.jpeg" class="slider-img" alt="Landscaping Project 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Errigasin sprinkler-2.jpeg" class="slider-img" alt="Landscaping Project 3" />
+                </div>
+              </div>
+
+              <button class="carousel-control-prev custom-carousel-arrow" type="button"
+                data-bs-target="#projectCarousel3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next custom-carousel-arrow" type="button"
+                data-bs-target="#projectCarousel3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="card-title fw-bold">
+                Swimming Pool Construction & Modern Systems
+              </h5>
+              <p class="card-text text-muted mb-4">
+                Custom swimming pool construction with modern filtration,
+                lighting, and hot & cold systems, ensuring durability, safety,
+                and a premium experience.
+              </p>
+
+              <div class="d-flex gap-2 mt-auto">
+                <a href="/details.html"
+                  class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center"
+                  style="padding: 8px 5px; font-size: 0.9rem">
+                  Read More
+                </a>
+
+                <div class="w-50 d-flex gap-2">
+                  <a href="tel:+919876543210"
+                    class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center"
+                    style="padding: 8px 0; font-size: 1.1rem" title="Call Us">
+                    <i class="fas fa-phone"></i>
+                  </a>
+
+                  <a href="https://wa.me/919876543210" target="_blank"
+                    class="btn btn-theme w-50 d-flex align-items-center justify-content-center"
+                    style="padding: 8px 0; font-size: 1.2rem" title="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- ============ Choose the Product Section =========== -->
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2>CHOOSE THE PRODUCTS</h2>
+        <div style="
+              width: 60px;
+              height: 3px;
+              background-color: var(--accent-gold);
+              margin: 15px auto;
+            "></div>
+        <p class="text-muted">OUR CORE EXPERTISE</p>
+      </div>
 
-    <div class="row g-4">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card project-card h-100 shadow-sm border-0">
+            <div id="projectCarousel1" class="carousel slide card-img-top overflow-hidden" data-bs-ride="carousel">
+              <div class="carousel-indicators custom-small-dots d-flex justify-content-center">
+                <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
 
-      <div class="col-md-4">
-        <div class="card project-card h-100 shadow-sm border-0">
-          
-          <div id="projectCarousel1" class="carousel slide card-img-top overflow-hidden" data-bs-ride="carousel">
-            
-            <div class="carousel-indicators custom-small-dots d-flex justify-content-center">
-              <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Errigasin sprinkler-2.jpeg" class="slider-img" alt="Smart Irrigation 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Errigasin sprinkler-3.jpeg" class="slider-img" alt="Smart Irrigation 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Errigasin sprinkler.jpeg" class="slider-img" alt="Smart Irrigation 3" />
+                </div>
+              </div>
+
+              <button class="carousel-control-prev custom-carousel-arrow" type="button"
+                data-bs-target="#projectCarousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next custom-carousel-arrow" type="button"
+                data-bs-target="#projectCarousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="card-title fw-bold">
+                Smart Irrigation & Automation Sprinkler Systems
+              </h5>
+              <p class="card-text text-muted mb-4">
+                Professional bar bending work for strong building structures
+                with quality steel and skilled labor.
+              </p>
 
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/Errigasin sprinkler-2.jpeg" class="slider-img" alt="Smart Irrigation 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="images/Errigasin sprinkler-3.jpeg" class="slider-img" alt="Smart Irrigation 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="images/Errigasin sprinkler.jpeg" class="slider-img" alt="Smart Irrigation 3" />
+              <div class="d-flex gap-2 mt-auto">
+                <a href="/details.html"
+                  class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center"
+                  style="padding: 8px 5px; font-size: 0.9rem">
+                  Read More
+                </a>
+
+                <div class="w-50 d-flex gap-2">
+                  <a href="tel:+919876543210"
+                    class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center"
+                    style="padding: 8px 0; font-size: 1.1rem" title="Call Us">
+                    <i class="fas fa-phone"></i>
+                  </a>
+
+                  <a href="https://wa.me/919876543210" target="_blank"
+                    class="btn btn-theme w-50 d-flex align-items-center justify-content-center"
+                    style="padding: 8px 0; font-size: 1.2rem" title="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
               </div>
             </div>
-
-            <button class="carousel-control-prev custom-carousel-arrow" type="button" data-bs-target="#projectCarousel1" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next custom-carousel-arrow" type="button" data-bs-target="#projectCarousel1" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-          <div class="card-body p-4 d-flex flex-column">
-            <h5 class="card-title fw-bold">Smart Irrigation & Automation Sprinkler Systems</h5>
-            <p class="card-text text-muted mb-4">
-              Smart irrigation and automated sprinkler systems for parks, gardens, and landscapes, ensuring precise watering, water saving, and healthy green environments.
-            </p>
-            
-            <div class="d-flex gap-2 mt-auto">
-              <a href="/details.html" class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 5px; font-size: 0.9rem;">
-                Read More
-              </a>
+        </div>
 
-              <div class="w-50 d-flex gap-2">
-                <a href="tel:+919876543210" class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 0; font-size: 1.1rem;" title="Call Us">
-                  <i class="fas fa-phone"></i>
+        <!-- ==== Card 2 ===== -->
+        <div class="col-md-4">
+          <div class="card project-card h-100 shadow-sm border-0">
+            <div id="projectCarousel2" class="carousel slide card-img-top overflow-hidden" data-bs-ride="carousel">
+              <div class="carousel-indicators custom-small-dots d-flex justify-content-center">
+                <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Pool.jpeg" class="slider-img" alt="Landscaping Project 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Modern Pool.jpeg" class="slider-img" alt="Landscaping Project 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Errigasin sprinkler-2.jpeg" class="slider-img" alt="Landscaping Project 3" />
+                </div>
+              </div>
+
+              <button class="carousel-control-prev custom-carousel-arrow" type="button"
+                data-bs-target="#projectCarousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next custom-carousel-arrow" type="button"
+                data-bs-target="#projectCarousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="card-title fw-bold">
+                Premium Landscaping & Garden Design
+              </h5>
+              <p class="card-text text-muted mb-4">
+                Transform your outdoor spaces with lush greenery, custom
+                pathways, and sustainable planting solutions for a beautiful
+                environment.
+              </p>
+
+              <div class="d-flex gap-2 mt-auto">
+                <a href="/details.html"
+                  class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center"
+                  style="padding: 8px 5px; font-size: 0.9rem">
+                  Read More
                 </a>
-                
-                <a href="https://wa.me/919876543210" target="_blank" class="btn btn-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 0; font-size: 1.2rem;" title="Chat on WhatsApp">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
+
+                <div class="w-50 d-flex gap-2">
+                  <a href="tel:+919876543210"
+                    class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center"
+                    style="padding: 8px 0; font-size: 1.1rem" title="Call Us">
+                    <i class="fas fa-phone"></i>
+                  </a>
+
+                  <a href="https://wa.me/919876543210" target="_blank"
+                    class="btn btn-theme w-50 d-flex align-items-center justify-content-center"
+                    style="padding: 8px 0; font-size: 1.2rem" title="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
               </div>
             </div>
-            
+          </div>
+        </div>
+        <!-- ==== Card 3 ===== -->
+        <div class="col-md-4">
+          <div class="card project-card h-100 shadow-sm border-0">
+            <div id="projectCarousel2" class="carousel slide card-img-top overflow-hidden" data-bs-ride="carousel">
+              <div class="carousel-indicators custom-small-dots d-flex justify-content-center">
+                <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Pool.jpeg" class="slider-img" alt="Landscaping Project 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Modern Pool.jpeg" class="slider-img" alt="Landscaping Project 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Errigasin sprinkler-2.jpeg" class="slider-img" alt="Landscaping Project 3" />
+                </div>
+              </div>
+
+              <button class="carousel-control-prev custom-carousel-arrow" type="button"
+                data-bs-target="#projectCarousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next custom-carousel-arrow" type="button"
+                data-bs-target="#projectCarousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="card-title fw-bold">
+                Premium Landscaping & Garden Design
+              </h5>
+              <p class="card-text text-muted mb-4">
+                Transform your outdoor spaces with lush greenery, custom
+                pathways, and sustainable planting solutions for a beautiful
+                environment.
+              </p>
+
+              <div class="d-flex gap-2 mt-auto">
+                <a href="/details.html"
+                  class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center"
+                  style="padding: 8px 5px; font-size: 0.9rem">
+                  Read More
+                </a>
+
+                <div class="w-50 d-flex gap-2">
+                  <a href="tel:+919876543210"
+                    class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center"
+                    style="padding: 8px 0; font-size: 1.1rem" title="Call Us">
+                    <i class="fas fa-phone"></i>
+                  </a>
+
+                  <a href="https://wa.me/919876543210" target="_blank"
+                    class="btn btn-theme w-50 d-flex align-items-center justify-content-center"
+                    style="padding: 8px 0; font-size: 1.2rem" title="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-  
-      <div class="col-md-4">
-        <div class="card project-card h-100 shadow-sm border-0">
-          
-          <div id="projectCarousel2" class="carousel slide card-img-top overflow-hidden" data-bs-ride="carousel">
-            
-            <div class="carousel-indicators custom-small-dots d-flex justify-content-center">
-              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/Pool.jpeg" class="slider-img" alt="Landscaping Project 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="images/Modern Pool.jpeg" class="slider-img" alt="Landscaping Project 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="images/Errigasin sprinkler-2.jpeg" class="slider-img" alt="Landscaping Project 3" />
-              </div>
-            </div>
-
-            <button class="carousel-control-prev custom-carousel-arrow" type="button" data-bs-target="#projectCarousel2" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next custom-carousel-arrow" type="button" data-bs-target="#projectCarousel2" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <div class="card-body p-4 d-flex flex-column">
-            <h5 class="card-title fw-bold">Smart Irrigation & Automation Systems</h5>
-            <p class="card-text text-muted mb-4">
-              Smart irrigation and automated sprinkler systems for parks, gardens, and landscapes, ensuring precise watering, water conservation, and healthy green environments.
-            </p>
-            
-            <div class="d-flex gap-2 mt-auto">
-              <a href="/details.html" class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 5px; font-size: 0.9rem;">
-                Read More
-              </a>
-
-              <div class="w-50 d-flex gap-2">
-                <a href="tel:+919876543210" class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 0; font-size: 1.1rem;" title="Call Us">
-                  <i class="fas fa-phone"></i>
-                </a>
-                
-                <a href="https://wa.me/919876543210" target="_blank" class="btn btn-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 0; font-size: 1.2rem;" title="Chat on WhatsApp">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card project-card h-100 shadow-sm border-0">
-          
-          <div id="projectCarousel3" class="carousel slide card-img-top overflow-hidden" data-bs-ride="carousel">
-            
-            <div class="carousel-indicators custom-small-dots d-flex justify-content-center">
-              <button type="button" data-bs-target="#projectCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#projectCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#projectCarousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/Pool.jpeg" class="slider-img" alt="Landscaping Project 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="images/Modern Pool.jpeg" class="slider-img" alt="Landscaping Project 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="images/Errigasin sprinkler-2.jpeg" class="slider-img" alt="Landscaping Project 3" />
-              </div>
-            </div>
-
-            <button class="carousel-control-prev custom-carousel-arrow" type="button" data-bs-target="#projectCarousel3" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next custom-carousel-arrow" type="button" data-bs-target="#projectCarousel3" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <div class="card-body p-4 d-flex flex-column">
-            <h5 class="card-title fw-bold">Water Fountain Design & Installation</h5>
-            <p class="card-text text-muted mb-4">
-              Creative fountain design and installation for parks, gardens, and spaces, using modern technology for stunning effects and long-lasting performance.
-            </p>
-            
-            <div class="d-flex gap-2 mt-auto">
-              <a href="/details.html" class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 5px; font-size: 0.9rem;">
-                Read More
-              </a>
-
-              <div class="w-50 d-flex gap-2">
-                <a href="tel:+919876543210" class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 0; font-size: 1.1rem;" title="Call Us">
-                  <i class="fas fa-phone"></i>
-                </a>
-                
-                <a href="https://wa.me/919876543210" target="_blank" class="btn btn-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 0; font-size: 1.2rem;" title="Chat on WhatsApp">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-  <!-- ============ Choose the Product Section =========== -->
-  <div class="container py-4">
-    <div class="text-center mb-5">
-      <h2>CHOOSE THE PRODUCTS</h2>
-      <div style="width: 60px; height: 3px; background-color: var(--accent-gold); margin: 15px auto;"></div>
-      <p class="text-muted">OUR CORE EXPERTISE</p>
-    </div>
+  </section>
 
-    <div class="row g-4">
+  <!-- ====================== Why Choose Us Section ======================= -->
+  <section class="py-5" style="background-color: var(--light-bg)" id="why-choose-us">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2>Why Choose Us</h2>
+        <div style="
+              width: 60px;
+              height: 3px;
+              background-color: var(--accent-gold);
+              margin: 15px auto;
+            "></div>
+        <p class="text-muted">
+          Delivering excellence, trust, and quality in every project.
+        </p>
+      </div>
 
-<div class="col-md-4">
-        <div class="card project-card h-100 shadow-sm border-0">
-          
-          <div id="projectCarousel1" class="carousel slide card-img-top overflow-hidden" data-bs-ride="carousel">
-            
-            <div class="carousel-indicators custom-small-dots d-flex justify-content-center">
-              <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#projectCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <i class="fas fa-hard-hat"></i>
             </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/Errigasin sprinkler-2.jpeg" class="slider-img" alt="Smart Irrigation 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="images/Errigasin sprinkler-3.jpeg" class="slider-img" alt="Smart Irrigation 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="images/Errigasin sprinkler.jpeg" class="slider-img" alt="Smart Irrigation 3" />
-              </div>
-            </div>
-
-            <button class="carousel-control-prev custom-carousel-arrow" type="button" data-bs-target="#projectCarousel1" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next custom-carousel-arrow" type="button" data-bs-target="#projectCarousel1" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <div class="card-body p-4 d-flex flex-column">
-            <h5 class="card-title fw-bold">Smart Irrigation & Automation Sprinkler Systems</h5>
-            <p class="card-text text-muted mb-4">
-              Professional bar bending work for strong building structures with quality steel and skilled labor.
+            <h5>Premium Quality</h5>
+            <p>
+              We use high-quality materials and advanced techniques to deliver
+              durable and long-lasting results.
             </p>
-            
-            <div class="d-flex gap-2 mt-auto">
-              <a href="/details.html" class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 5px; font-size: 0.9rem;">
-                Read More
-              </a>
-
-              <div class="w-50 d-flex gap-2">
-                <a href="tel:+919876543210" class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 0; font-size: 1.1rem;" title="Call Us">
-                  <i class="fas fa-phone"></i>
-                </a>
-                
-                <a href="https://wa.me/919876543210" target="_blank" class="btn btn-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 0; font-size: 1.2rem;" title="Chat on WhatsApp">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              </div>
-            </div>
-            
           </div>
         </div>
-      </div>
-  
-  <!-- ==== Card 2 ===== -->
-   <div class="col-md-4">
-        <div class="card project-card h-100 shadow-sm border-0">
-          
-          <div id="projectCarousel2" class="carousel slide card-img-top overflow-hidden" data-bs-ride="carousel">
-            
-            <div class="carousel-indicators custom-small-dots d-flex justify-content-center">
-              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <i class="fas fa-clock"></i>
             </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/Pool.jpeg" class="slider-img" alt="Landscaping Project 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="images/Modern Pool.jpeg" class="slider-img" alt="Landscaping Project 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="images/Errigasin sprinkler-2.jpeg" class="slider-img" alt="Landscaping Project 3" />
-              </div>
-            </div>
-
-            <button class="carousel-control-prev custom-carousel-arrow" type="button" data-bs-target="#projectCarousel2" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next custom-carousel-arrow" type="button" data-bs-target="#projectCarousel2" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <div class="card-body p-4 d-flex flex-column">
-            <h5 class="card-title fw-bold">Premium Landscaping & Garden Design</h5>
-            <p class="card-text text-muted mb-4">
-              Transform your outdoor spaces with lush greenery, custom pathways, and sustainable planting solutions for a beautiful environment.
+            <h5>On-Time Delivery</h5>
+            <p>
+              Our expert team ensures every project is completed on time,
+              without delays.
             </p>
-            
-            <div class="d-flex gap-2 mt-auto">
-              <a href="/details.html" class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 5px; font-size: 0.9rem;">
-                Read More
-              </a>
-
-              <div class="w-50 d-flex gap-2">
-                <a href="tel:+919876543210" class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 0; font-size: 1.1rem;" title="Call Us">
-                  <i class="fas fa-phone"></i>
-                </a>
-                
-                <a href="https://wa.me/919876543210" target="_blank" class="btn btn-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 0; font-size: 1.2rem;" title="Chat on WhatsApp">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              </div>
-            </div>
-            
           </div>
         </div>
-      </div>
-  <!-- ==== Card 3 ===== -->
-   <div class="col-md-4">
-        <div class="card project-card h-100 shadow-sm border-0">
-          
-          <div id="projectCarousel2" class="carousel slide card-img-top overflow-hidden" data-bs-ride="carousel">
-            
-            <div class="carousel-indicators custom-small-dots d-flex justify-content-center">
-              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#projectCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <i class="fas fa-user-tie"></i>
             </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/Pool.jpeg" class="slider-img" alt="Landscaping Project 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="images/Modern Pool.jpeg" class="slider-img" alt="Landscaping Project 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="images/Errigasin sprinkler-2.jpeg" class="slider-img" alt="Landscaping Project 3" />
-              </div>
-            </div>
-
-            <button class="carousel-control-prev custom-carousel-arrow" type="button" data-bs-target="#projectCarousel2" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next custom-carousel-arrow" type="button" data-bs-target="#projectCarousel2" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <div class="card-body p-4 d-flex flex-column">
-            <h5 class="card-title fw-bold">Premium Landscaping & Garden Design</h5>
-            <p class="card-text text-muted mb-4">
-              Transform your outdoor spaces with lush greenery, custom pathways, and sustainable planting solutions for a beautiful environment.
+            <h5>Expert Professionals</h5>
+            <p>
+              Skilled engineers and professionals dedicated to precision,
+              quality, and perfect execution.
             </p>
-            
-            <div class="d-flex gap-2 mt-auto">
-              <a href="/details.html" class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 5px; font-size: 0.9rem;">
-                Read More
-              </a>
+          </div>
+        </div>
 
-              <div class="w-50 d-flex gap-2">
-                <a href="tel:+919876543210" class="btn btn-outline-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 0; font-size: 1.1rem;" title="Call Us">
-                  <i class="fas fa-phone"></i>
-                </a>
-                
-                <a href="https://wa.me/919876543210" target="_blank" class="btn btn-theme w-50 d-flex align-items-center justify-content-center" style="padding: 8px 0; font-size: 1.2rem;" title="Chat on WhatsApp">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <i class="fas fa-hand-holding-usd"></i>
             </div>
-            
+            <h5>Transparent Pricing</h5>
+            <p>
+              Clear, honest, and competitive pricing with no hidden costs.
+            </p>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ====================== Why Choose Us Section ======================= -->
- <section class="py-5" style="background-color: var(--light-bg);" id="why-choose-us">
-  <div class="container py-4">
-    
-    <div class="text-center mb-5">
-      <h2>Why Choose Us</h2>
-      <div style="width: 60px; height: 3px; background-color: var(--accent-gold); margin: 15px auto;"></div>
-      <p class="text-muted">Delivering excellence, trust, and quality in every project.</p>
-    </div>
-
-    <div class="row g-4">
-      
-      <div class="col-md-6 col-lg-3">
-        <div class="feature-box">
-          <div class="feature-icon-wrapper">
-            <i class="fas fa-hard-hat"></i>
-          </div>
-          <h5>Premium Quality</h5>
-          <p>We use top-grade materials and advanced techniques to ensure your construction stands the test of time.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <div class="feature-box">
-          <div class="feature-icon-wrapper">
-            <i class="fas fa-clock"></i>
-          </div>
-          <h5>On-Time Delivery</h5>
-          <p>We value your time. Our expert team ensures that every project is completed strictly within the promised deadline.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <div class="feature-box">
-          <div class="feature-icon-wrapper">
-            <i class="fas fa-user-tie"></i>
-          </div>
-          <h5>Expert Professionals</h5>
-          <p>Our team consists of highly experienced engineers, architects, and skilled field workers dedicated to perfection.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <div class="feature-box">
-          <div class="feature-icon-wrapper">
-            <i class="fas fa-hand-holding-usd"></i>
-          </div>
-          <h5>Transparent Pricing</h5>
-          <p>No hidden costs. We provide clear, honest, and highly competitive pricing for all our real estate and construction services.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================== About Us Content ==================== -->
+  <!-- ================== About Us Content ==================== -->
 
   <section class="py-5 bg-white">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-10">
-
           <div class="text-center mb-4">
-            <h6 class="text-warning fw-bold text-uppercase ls-wide">Who We Are</h6>
-            <h2 class="fw-bold display-6 mb-3">About AB Green Tech</h2>
-            <div class="mx-auto mb-3 bg-warning" style="height: 3px; width: 60px;"></div>
+            <h6 class="text-warning fw-bold text-uppercase ls-wide">
+              Who We Are
+            </h6>
+            <h2 class="fw-bold display-6 mb-3">About AB GREENTECH</h2>
+            <div class="mx-auto mb-3 bg-warning" style="height: 3px; width: 60px"></div>
           </div>
 
           <div class="about-content-box" id="aboutContentArea">
             <div class="about-content-text">
-
               <!-- ================ Replaceble Content Start ================= -->
 
-              <p><strong>Lucknow</strong> is a city of culture, celebration, and royal charm. Known as the <strong>City of Nawabs</strong>, Lucknow has always loved grand gatherings, music, food, and beautiful decorations. From traditional weddings to modern birthday parties, from corporate meetings to social get-togethers, events are a big part of life here.</p>
+              <h5>
+                AB Greentech – Leading Water Solution Company in Punjab &
+                India
+              </h5>
 
-              <p>If you are searching online for any kind of event service in Lucknow — whether it is a <strong>banquet hall, wedding planner, event decorator, photographer, caterer, DJ, anchor, or surprise party planner</strong> — this platform is made for you.</p>
+              <p>
+                AB Greentech is a professional and trusted company offering
+                advanced solutions in irrigation systems, swimming pools, and
+                decorative water features across Punjab and all over India. We
+                specialize in designing, supplying, and executing modern
+                water-based projects that enhance landscapes, gardens,
+                residential properties, and commercial spaces.
+              </p>
 
-              <p><strong>Events Bucket</strong> is an event directory website created especially for the people of Lucknow. Our goal is simple: We connect you with the right event service providers in the city. Instead of searching on many different websites, calling random numbers, and wasting time, you can find everything related to events in one place. We list trusted and professional <strong>event planners, wedding services, banquet halls, decorators, photographers, caterers, entertainers,</strong> and many other vendors who help you create beautiful memories.</p>
+              <p>
+                Our approach combines cutting-edge technology, engineering
+                precision, and creative design to build efficient, durable,
+                and visually appealing water systems. From initial planning
+                and technical drawings to civil work, installation,
+                automation, and equipment supply, we deliver complete
+                end-to-end solutions under one roof.
+              </p>
 
-              <h5>The Hub of Celebration</h5>
-              <p>Lucknow is the capital of Uttar Pradesh and one of the fastest-growing cities in North India. Every day, hundreds of events take place here. Weddings, engagements, birthdays, corporate launches, school functions, political programs, exhibitions, kitty parties, anniversary celebrations, baby showers, and religious functions — the list never ends. Because of this high demand, many event companies and vendors are working in the city. But finding the right one can be confusing. That is why <strong>Events Bucket</strong> works as a trusted event directory in Lucknow.</p>
+              <p>
+                Our mission is to provide high-quality, innovative, and
+                long-lasting water solutions that improve both functionality
+                and aesthetics of modern outdoor environments across India.
+              </p>
 
-              <h5>Wedding Services in Lucknow</h5>
-              <p>Weddings in Lucknow are big and full of joy. From Mehndi to Sangeet, from Haldi to Reception, every function is celebrated with love and energy. If you are planning a wedding, you may need many services. On our platform, you can find:</p>
+              <h5>Our Services</h5>
+              <strong>Irrigation & Sprinkler Systems in Punjab & India</strong>
+
+              <p>
+                We provide advanced irrigation system solutions designed for
+                efficiency, water conservation, and smart automation across
+                Punjab and all over India.
+              </p>
+
               <ul>
-                <li>Wedding planners and Destination wedding planners</li>
-                <li>Banquet halls and marriage lawns</li>
-                <li>Wedding decorators and theme decorators</li>
-                <li>Bridal makeup artists</li>
-                <li>Wedding photographers and cinematographers</li>
-                <li>Catering services, Anchors, and Entertainers</li>
-              </ul>
-              <p>If you want a stress-free wedding, hiring a professional <strong>wedding planner in Lucknow</strong> is a smart decision.</p>
-
-              <h5>Birthday Party Planners</h5>
-              <p>Birthday parties are not only for kids. Today, people celebrate 1st birthdays, 18th birthdays, and even 50th birthdays in a special way. Theme decoration, balloon decoration, LED numbers, photo booths, magic shows, games, and cake table setups make a birthday party fun and memorable. We list:</p>
-              <ul>
-                <li>Balloon decorators and Theme party planners</li>
-                <li>Kids birthday entertainers and Magic show artists</li>
-                <li>Birthday photographers and Cake vendors</li>
-              </ul>
-
-              <h5>Corporate Event Management</h5>
-              <p>Lucknow is also a business city. For corporate events, proper planning and timing are essential. Professional <strong>event management companies in Lucknow</strong> make sure everything runs smoothly. You may need:</p>
-              <ul>
-                <li>Corporate event planners and Conference hall booking</li>
-                <li>Audio/Video setup, LED walls, and Sound systems</li>
-                <li>Corporate anchors and Brand promotion agencies</li>
-              </ul>
-
-              <h5>Banquet Halls and Venues</h5>
-              <p>Finding the right venue is the first step of any event. In Lucknow, you can find small halls for 50 guests and big lawns for 2000+ guests. Our directory includes <strong>Banquet halls, Marriage lawns, Party halls, Conference halls, Kitty party venues, and Luxury hotels</strong>. You can check location, capacity, facilities, parking, and decoration options easily.</p>
-
-              <h5>Decorators, Photographers & Caterers</h5>
-              <p>Decoration is the heart of any event. In Lucknow, decorators provide <strong>Wedding stage decoration, Haldi and Mehndi decoration, Floral decoration, and Light decoration</strong>. To capture these moments, our platform lists <strong>Wedding photographers, Pre-wedding shooters, and Drone videographers</strong>.</p>
-              <p>And let's not forget food! Lucknow is famous for its Awadhi cuisine. Whether you want traditional Lucknawi food or a modern multi-cuisine buffet, you can connect with the right <strong>Veg and Non-veg caterers</strong> here.</p>
-
-              <h5>Why Choose Events Bucket?</h5>
-              <p>When you search on the internet, you see many results, but it is hard to know which vendor is genuine. <strong>Events Bucket</strong> helps in:</p>
-              <ul>
-                <li>Saving time by finding multiple vendors in one place.</li>
-                <li>Comparing services and prices.</li>
-                <li>Connecting directly with service providers.</li>
-                <li>Getting creative ideas for your event.</li>
+                <li>Irrigation system design and technical drawings</li>
+                <li>Smart irrigation automation systems</li>
+                <li>Sensor-based irrigation control solutions</li>
+                <li>Wi-Fi enabled irrigation systems</li>
+                <li>Sprinkler irrigation systems</li>
+                <li>Drip irrigation systems</li>
+                <li>Manual irrigation setups</li>
+                <li>Landscape irrigation planning</li>
               </ul>
 
-              <p><strong>Our Vision:</strong> We want to become the most trusted event directory in Lucknow. We want to make event planning simple, stress-free, and budget-friendly. We believe that every event, big or small, deserves proper planning and professional support.</p>
+              <p>
+                We also offer complete system execution, technical
+                consultation, and supply of high-quality irrigation equipment
+                and materials for all types of projects across India.
+              </p>
 
-              <p><strong>Events Bucket</strong> is your one-stop event directory in Lucknow. Start your search today and make your next event memorable, beautiful, and stress-free.</p>
+              <h5>Swimming Pool Solutions in Punjab & India</h5>
+
+              <p>
+                We design and build modern swimming pools with advanced
+                technology and premium finishing for residential and
+                commercial spaces across Punjab and India.
+              </p>
+
+              <ul>
+                <li>Custom swimming pool design and technical drawings</li>
+                <li>Excavation and civil construction work</li>
+                <li>Advanced waterproofing systems</li>
+                <li>Pool filtration and cleaning systems</li>
+                <li>Pumps, valves, and pipeline installation</li>
+                <li>Fully automatic swimming pool systems</li>
+                <li>Pool chiller systems</li>
+                <li>Hot &amp; cold water pool solutions</li>
+                <li>Underwater LED lighting systems</li>
+                <li>Mosaic tile and stone finishing work</li>
+                <li>Pool accessories and nozzle installation</li>
+              </ul>
+
+              <p>
+                We provide complete installation services along with supply of
+                all swimming pool materials and equipment to ensure a
+                high-quality and long-lasting finish.
+              </p>
+
+              <h5>Decorative Water Fountain Systems in Punjab & India</h5>
+
+              <p>
+                Enhance your space with attractive and artistic water features
+                designed with precision and creativity.
+              </p>
+
+              <ul>
+                <li>Musical fountain systems</li>
+                <li>Decorative water fountains</li>
+                <li>Garden fountain designs</li>
+                <li>Fountain pumps and nozzle installation</li>
+                <li>Automated fountain control systems</li>
+                <li>Fountain lighting and underwater illumination</li>
+              </ul>
+
+              <p>
+                Our team delivers complete design, installation, and equipment
+                supply to create visually stunning and reliable water features
+                for homes, hotels, parks, and commercial properties across
+                Punjab and all over India.
+              </p>
+
+              <h5>Why Choose AB Greentech</h5>
+
+              <strong>Complete Water Solution Provider Across Punjab &
+                India</strong>
+              <p>
+                AB Greentech offers comprehensive solutions for irrigation
+                systems, swimming pools, and decorative water features across
+                Punjab and nationwide.
+              </p>
+
+              <strong>Advanced Automation Technology</strong>
+              <p>
+                We use modern technology including sensor-based irrigation
+                systems, Wi-Fi-enabled controls, and fully automated pool
+                systems for maximum efficiency.
+              </p>
+
+              <strong>Professional Design & Technical Expertise</strong>
+              <p>
+                Our experienced team provides detailed technical drawings,
+                smart system planning, and customized project designs for
+                optimal performance and visual appeal.
+              </p>
+
+              <strong>High-Quality Materials & Equipment</strong>
+              <p>
+                We use premium-quality pumps, valves, filtration systems,
+                nozzles, and lighting equipment to ensure durability and
+                reliability.
+              </p>
+
+              <strong>Customized Solutions for Every Project</strong>
+              <p>
+                We deliver tailored solutions for residential, commercial,
+                landscape, hospitality, and industrial projects across Punjab
+                and all over India.
+              </p>
 
               <!-- ================ Replaceble Content END ================= -->
             </div>
@@ -643,577 +851,513 @@
 
           <div class="text-center mt-3">
             <button class="btn btn-outline-warning rounded-pill fw-bold px-4" onclick="loadMoreContent(this)">
-              <span>Read More</span> <i class="fa-solid fa-chevron-down ms-1"></i>
+              <span>Read More</span>
+              <i class="fa-solid fa-chevron-down ms-1"></i>
             </button>
           </div>
-
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==================== Gallery Section ===================== -->
-   <section class="py-5 bg-white sec-color" id="gallery">
-  <div class="container py-4">
-    
-    <div class="text-center mb-5">
-      <h2>Project Gallery</h2>
-      <div style="width: 60px; height: 3px; background-color: var(--accent-gold); margin: 15px auto;"></div>
-      <p class="text-muted">A glimpse into our premium ongoing and completed projects.</p>
-    </div>
-    
-    <div class="row g-4">
-      
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-          <img src="images/Errigasin sprinkler-2.jpeg" alt="Construction Site" class="img-fluid">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-          <img src="images/WaterBody.jpeg" alt="Building Exterior" class="img-fluid">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-          <img src="images/Errigasin sprinkler.jpeg" alt="Corporate Architecture" class="img-fluid">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-          <img src="images/Modern Pool.jpeg" alt="Warehouse Construction" class="img-fluid">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-          <img src="images/Pool.jpeg" alt="Modern Building" class="img-fluid">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-          <img src="images/Errigasin sprinkler-3.jpeg" alt="Residential Complex" class="img-fluid">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content position-relative">
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      <div class="modal-body p-0 text-center">
-        <img src="" id="lightboxImage" alt="Enlarged Gallery Image" class="img-fluid" />
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ===================== FAQ Section ====================== -->
-
-    <section class="py-5" style="background-color: #ffff">
-      <div class="container py-3">
-        <div class="text-center mb-5">
-          <span
-            class="badge bg-warning bg-opacity-5 text-white px-3 py-2 rounded-pill fw-bold mb-3 ls-wide text-uppercase"
-          >
-            <i class="fa-regular fa-circle-question me-1 text-white"></i> Have
-            Questions?
-          </span>
-          <h2 class="fw-bold display-6 mb-3 text-dark">
-            Lucknow Event Planning FAQs
-          </h2>
-          <div
-            class="mx-auto mb-4"
-            style="
-              height: 4px;
+  <section class="py-5 bg-white sec-color" id="gallery">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2>Project Gallery</h2>
+        <div style="
               width: 60px;
-              background-color: #F39C12;
-              border-radius: 2px;
-            "
-          ></div>
-          <p class="text-muted w-100 w-md-75 mx-auto fs-6">
-            Find answers to the most common questions about booking decorators
-            and planners in our city.
-          </p>
+              height: 3px;
+              background-color: var(--accent-gold);
+              margin: 15px auto;
+            "></div>
+        <p class="text-muted">
+          A glimpse into our premium ongoing and completed projects.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+            <img src="images/Errigasin sprinkler-2.jpeg" alt="Construction Site" class="img-fluid" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
         </div>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <div class="accordion modern-faq" id="lucknowFaqAccordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faqOne">
-                  <button
-                    class="accordion-button fw-bold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFaqOne"
-                    aria-expanded="true"
-                  >
-                    <span class="faq-text"
-                      >What is Events Bucket in Lucknow?</span
-                    >
-                    <div class="faq-icon">
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseFaqOne"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#lucknowFaqAccordion"
-                >
-                  <div class="accordion-body">
-                    Events Bucket is an online event directory platform based in Lucknow. We help people find all types of event services in one place. If you are planning a wedding, birthday party, corporate event, anniversary, or any other function, you can search for vendors here. We list event planners, banquet halls, decorators, photographers, caterers, DJs, anchors, and many more service providers. Our platform saves your time and makes your search easy. Instead of checking many websites, you can explore multiple event services in Lucknow on a single platform and contact vendors directly.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faqTwo">
-                  <button
-                    class="accordion-button collapsed fw-bold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFaqTwo"
-                  >
-                    <span class="faq-text"
-                      >How can I find the best event planner in Lucknow?</span
-                    >
-                    <div class="faq-icon">
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseFaqTwo"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#lucknowFaqAccordion"
-                >
-                  <div class="accordion-body">
-                    Finding the best event planner in Lucknow becomes simple with our platform. You can search for event planners, check their services, and compare different options. Every planner has different packages, ideas, and experience. You can contact them directly to discuss your event needs, budget, and date. It is always good to ask about their past work and services included. Our directory helps you connect with professional event planners in Lucknow who manage weddings, birthdays, corporate events, and social gatherings. This makes it easier for you to choose the right planner for your special event.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faqThree">
-                  <button
-                    class="accordion-button collapsed fw-bold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFaqThree"
-                  >
-                    <span class="faq-text"
-                      >Do you provide wedding planning services in Lucknow?</span
-                    >
-                    <div class="faq-icon">
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseFaqThree"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#lucknowFaqAccordion"
-                >
-                  <div class="accordion-body">
-                    Events Bucket is not a direct wedding planning company, but we list many professional wedding planners in Lucknow. You can find wedding decorators, banquet halls, caterers, photographers, makeup artists, DJs, and other wedding service providers on our platform. Whether you are planning a small family wedding or a big celebration, you can explore different vendors according to your budget and style. You can contact them directly and discuss your full wedding requirements. Our goal is to make your wedding planning process simple by giving you all wedding-related services in Lucknow in one place.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faqFour">
-                  <button
-                    class="accordion-button collapsed fw-bold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFaqFour"
-                  >
-                    <span class="faq-text"
-                      >Can I find banquet halls and marriage lawns in Lucknow here?</span
-                    >
-                    <div class="faq-icon">
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseFaqFour"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#lucknowFaqAccordion"
-                >
-                  <div class="accordion-body">
-                    Yes, you can easily find banquet halls and marriage lawns in Lucknow on our website. We list different types of venues, including small party halls, large marriage lawns, conference halls, and hotel banquet spaces. You can choose a venue according to your guest list, event type, and budget. Many venues offer decoration, catering, and parking facilities as well. You can check their location and contact details before booking. This helps you compare options and select the best venue for your wedding, birthday party, corporate event, or any other function in Lucknow.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faqFive">
-                  <button
-                    class="accordion-button collapsed fw-bold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFaqFive"
-                  >
-                    <span class="faq-text"
-                      >Do you list birthday party decorators in Lucknow?</span
-                    >
-                    <div class="faq-icon">
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseFaqFive"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#lucknowFaqAccordion"
-                >
-                  <div class="accordion-body">
-                    Yes, we list birthday party planners and decorators in Lucknow who provide creative and attractive decoration services. Whether you want balloon decoration, theme decoration, cartoon character entry, LED number setup, or home birthday decoration, you can find many options here. Birthday decorators help make your party colorful and fun. You can contact different decorators, ask about themes, and choose designs based on your budget. From kids’ first birthday to adult birthday celebrations, our platform helps you find the right birthday event service provider in Lucknow easily.
-                  </div>
-                </div>
-              </div>
-
-              <div class="collapse" id="moreLucknowFaqs">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="faqSix">
-                    <button
-                      class="accordion-button collapsed fw-bold"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFaqSix"
-                    >
-                      <span class="faq-text"
-                        >Can I find photographers for weddings and events in Lucknow?</span
-                      >
-                      <div class="faq-icon">
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFaqSix"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#lucknowFaqAccordion"
-                  >
-                    <div class="accordion-body">
-                      Yes, you can find professional photographers and videographers in Lucknow through our event directory. We list wedding photographers, pre-wedding shoot experts, birthday photographers, and corporate event photographers. Good photography helps you capture memories that last forever. You can check their style, discuss your event details, and compare pricing before booking. Many photographers also provide drone videos and cinematic wedding films. Our platform makes it easy for you to connect with experienced photographers in Lucknow so you can choose the best one for your special day.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="faqSeven">
-                    <button
-                      class="accordion-button collapsed fw-bold"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFaqSeven"
-                    >
-                      <span class="faq-text"
-                        >Can I customize a theme for my kid's birthday?</span
-                      >
-                      <div class="faq-icon">
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFaqSeven"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#lucknowFaqAccordion"
-                  >
-                    <div class="accordion-body">
-                      We do not directly provide catering services, but we list many catering service providers in Lucknow. You can find veg and non-veg caterers, buffet service providers, live food counters, sweet counters, and corporate lunch caterers. Food is one of the most important parts of any event. Guests always remember good taste and proper service. You can contact caterers directly, discuss your menu, and finalize according to your budget. Our event directory helps you find reliable catering services in Lucknow for weddings, birthdays, corporate functions, and other celebrations.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="faqEight">
-                    <button
-                      class="accordion-button collapsed fw-bold"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFaqEight"
-                    >
-                      <span class="faq-text"
-                        >Is Events Bucket an event planning company?</span
-                      >
-                      <div class="faq-icon">
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFaqEight"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#lucknowFaqAccordion"
-                  >
-                    <div class="accordion-body">
-                      Events Bucket is mainly an event directory platform in Lucknow. We are not just one event planning company. Instead, we list multiple event planners and service providers so that customers can compare and choose freely. Our aim is to connect event vendors and customers in a simple way. If you are searching for any event-related service in Lucknow, you can explore our listings and contact vendors directly. We help make event planning easier by giving you access to many trusted event professionals in one place.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="faqNine">
-                    <button
-                      class="accordion-button collapsed fw-bold"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFaqNine"
-                    >
-                      <span class="faq-text"
-                        >Can vendors list their event services on your website?</span
-                      >
-                      <div class="faq-icon">
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFaqNine"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#lucknowFaqAccordion"
-                  >
-                    <div class="accordion-body">
-                      Yes, event service providers in Lucknow can list their business on our platform. If you are a wedding planner, decorator, photographer, caterer, banquet hall owner, DJ, anchor, or any event vendor, you can join our directory. Listing your business helps you reach more customers who are searching online for event services in Lucknow. Our platform increases your visibility and helps you grow your business. Interested vendors can contact us to know more about the listing process and benefits.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="faqTen">
-                    <button
-                      class="accordion-button collapsed fw-bold"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFaqTen"
-                    >
-                      <span class="faq-text"
-                        >How do I contact event service providers in Lucknow?</span
-                      >
-                      <div class="faq-icon">
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFaqTen"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#lucknowFaqAccordion"
-                  >
-                    <div class="accordion-body">
-                      Contacting event service providers through our platform is simple. You can search for the service you need, open the vendor listing, and check their contact details. You can then call them directly or discuss your event requirements. It is always good to share your event date, location, guest count, and budget while talking to vendors. This helps them understand your needs clearly. Our directory makes the connection process smooth and quick so you can finalize the best event service provider in Lucknow without confusion.
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+            <img src="images/WaterBody.jpeg" alt="Building Exterior" class="img-fluid" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
             </div>
-            <div class="text-center mt-5">
-              <button
-                class="btn btn-warning text-white fw-bold rounded-pill px-4 py-2 shadow-lg dynamic-toggle-btn"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#moreLucknowFaqs"
-                aria-expanded="false"
-                aria-controls="moreLucknowFaqs"
-                style="transition: all 0.3s ease"
-              >
-                <span class="show-more-text"
-                  >Load More FAQs <i class="fa-solid fa-chevron-down ms-2"></i
-                ></span>
-                <span class="show-less-text"
-                  >Show Less <i class="fa-solid fa-chevron-up ms-2"></i
-                ></span>
-              </button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+            <img src="images/Errigasin sprinkler.jpeg" alt="Corporate Architecture" class="img-fluid" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+            <img src="images/Modern Pool.jpeg" alt="Warehouse Construction" class="img-fluid" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+            <img src="images/Pool.jpeg" alt="Modern Building" class="img-fluid" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+            <img src="images/Errigasin sprinkler-3.jpeg" alt="Residential Complex" class="img-fluid" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content position-relative">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body p-0 text-center">
+          <img src="" id="lightboxImage" alt="Enlarged Gallery Image" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== FAQ Section ====================== -->
+
+<section class="py-5" style="background-color: #ffff">
+    <div class="container py-3">
+      <div class="text-center mb-5">
+        <span
+          class="badge bg-warning bg-opacity-5 text-white px-3 py-2 rounded-pill fw-bold mb-3 ls-wide text-uppercase">
+          <i class="fa-regular fa-circle-question me-1 text-white"></i> Have
+          Questions?
+        </span>
+        <h2 class="fw-bold display-6 mb-3 text-dark">
+          Lucknow Event Planning FAQs
+        </h2>
+        <div class="mx-auto mb-4" style="
+              height: 4px;
+              width: 60px;
+              background-color: #f39c12;
+              border-radius: 2px;
+            "></div>
+        <p class="text-muted w-100 w-md-75 mx-auto fs-6">
+          Find answers to the most common questions about booking decorators
+          and planners in our city.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          
+          <div class="accordion modern-faq" id="lucknowFaqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqOne">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFaqOne" aria-expanded="true">
+                  <span class="faq-text">What services does AB Greentech provide?</span>
+                  <div class="faq-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseFaqOne" class="accordion-collapse collapse" data-bs-parent="#lucknowFaqAccordion">
+                <div class="accordion-body">
+                  AB Greentech provides complete water solution services including irrigation systems, swimming pool construction, and decorative water fountain design & installation. We handle everything from planning and design to execution, automation, and equipment supply, making us a one-stop solution provider in Punjab and across India.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqTwo">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFaqTwo">
+                  <span class="faq-text">Do you provide services outside Punjab?</span>
+                  <div class="faq-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseFaqTwo" class="accordion-collapse collapse" data-bs-parent="#lucknowFaqAccordion">
+                <div class="accordion-body">
+                  Yes, AB Greentech offers its services not only in Punjab but across all major cities in India. Our team is equipped to handle projects nationwide, ensuring the same level of quality, technology, and professional execution regardless of location.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqThree">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFaqThree">
+                  <span class="faq-text">What types of irrigation systems do you install?</span>
+                  <div class="faq-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseFaqThree" class="accordion-collapse collapse" data-bs-parent="#lucknowFaqAccordion">
+                <div class="accordion-body">
+                  We install a wide range of irrigation systems including drip irrigation, sprinkler systems, smart irrigation, and sensor-based automated irrigation systems. Our solutions are designed to conserve water, improve efficiency, and maintain healthy landscapes for residential, commercial, and agricultural projects.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqFour">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFaqFour">
+                  <span class="faq-text">Do you build customized swimming pools?</span>
+                  <div class="faq-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseFaqFour" class="accordion-collapse collapse" data-bs-parent="#lucknowFaqAccordion">
+                <div class="accordion-body">
+                  Yes, we specialize in designing and constructing fully customized swimming pools based on client requirements. Whether it’s a residential pool, commercial pool, or luxury pool, we provide tailored solutions with modern features like lighting, filtration, and temperature control systems.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqFive">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFaqFive">
+                  <span class="faq-text">What is included in swimming pool construction?</span>
+                  <div class="faq-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseFaqFive" class="accordion-collapse collapse" data-bs-parent="#lucknowFaqAccordion">
+                <div class="accordion-body">
+                  Our swimming pool construction services include design planning, excavation, civil work, waterproofing, filtration systems, plumbing, lighting installation, and finishing work such as tiles and accessories. We ensure a complete, ready-to-use pool with high durability and safety standards.
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="collapse" id="moreLucknowFaqs">
+            
+            <div class="accordion modern-faq" id="lucknowFaqAccordion2">
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqSix">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFaqSix">
+                    <span class="faq-text">Do you install decorative water fountains?</span>
+                    <div class="faq-icon">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseFaqSix" class="accordion-collapse collapse" data-bs-parent="#lucknowFaqAccordion2">
+                  <div class="accordion-body">
+                    Yes, we design and install a variety of water fountains including musical fountains, garden fountains, and decorative water features. Our team uses modern technology, lighting systems, and high-quality equipment to create visually attractive and long-lasting installations.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqSeven">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFaqSeven">
+                    <span class="faq-text">How long does project completion take?</span>
+                    <div class="faq-icon">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseFaqSeven" class="accordion-collapse collapse" data-bs-parent="#lucknowFaqAccordion2">
+                  <div class="accordion-body">
+                    The timeline of a project depends on its size, complexity, and requirements. Smaller projects can be completed quickly, while larger projects like swimming pools or complex fountain systems may take more time. However, we always follow a structured process to ensure timely delivery.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqEight">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFaqEight">
+                    <span class="faq-text">Do you provide maintenance services?</span>
+                    <div class="faq-icon">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseFaqEight" class="accordion-collapse collapse" data-bs-parent="#lucknowFaqAccordion2">
+                  <div class="accordion-body">
+                    Yes, we provide maintenance support and guidance for all our systems, including irrigation setups, swimming pools, and fountains. We ensure that your systems continue to perform efficiently with proper care and maintenance over time.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqNine">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFaqNine">
+                    <span class="faq-text">Are your systems automated?</span>
+                    <div class="faq-icon">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseFaqNine" class="accordion-collapse collapse" data-bs-parent="#lucknowFaqAccordion2">
+                  <div class="accordion-body">
+                    Yes, we specialize in advanced automation solutions such as Wi-Fi-enabled irrigation systems, sensor-based watering systems, and fully automatic swimming pool operations. These systems improve efficiency, reduce manual effort, and ensure better performance.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqTen">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFaqTen">
+                    <span class="faq-text">How can I get a quote for my project?</span>
+                    <div class="faq-icon">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseFaqTen" class="accordion-collapse collapse" data-bs-parent="#lucknowFaqAccordion2">
+                  <div class="accordion-body">
+                    You can easily get a quote by contacting AB Greentech through phone, WhatsApp, or website inquiry. Our team will understand your requirements, analyze your project, and provide a customized and transparent quotation with no hidden costs.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <button class="btn btn-warning text-white fw-bold rounded-pill px-4 py-2 shadow-lg dynamic-toggle-btn"
+              type="button" data-bs-toggle="collapse" data-bs-target="#moreLucknowFaqs" aria-expanded="false"
+              aria-controls="moreLucknowFaqs" style="transition: all 0.3s ease">
+              <span class="show-more-text">Load More FAQs <i class="fa-solid fa-chevron-down ms-2"></i></span>
+              <span class="show-less-text">Show Less <i class="fa-solid fa-chevron-up ms-2"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ======= FAQ END Here ======= -->
 
-
   <!-- ================== NAP Section ============= -->
-   <section class="py-5 bg-white" id="contact-nap">
+  <section class="py-5 bg-white" id="contact-nap">
     <div class="container py-4">
-        
-        <div class="text-center mb-5">
-            <h2>Visit Our Office</h2>
-            <div style="width: 60px; height: 3px; background-color: var(--accent-gold); margin: 15px auto;"></div>
-            <p class="text-muted">We are always ready to help you with your real estate and construction needs.</p>
-        </div>
-        
-        <div class="row g-4 align-items-stretch">
-            
-            <div class="col-lg-4">
-                <div class="nap-box">
-                    <h3 class="fw-bold mb-4" style="font-family: 'Montserrat', sans-serif;">Contact Info</h3>
-                    
-                    <div class="nap-item">
-                        <div class="nap-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="nap-text">
-                            <h5>Office Address</h5>
-                            <p>123 Business Tower, Civil Lines,<br>Prayagraj, Uttar Pradesh 211001</p>
-                        </div>
-                    </div>
-                    
-                    <div class="nap-item">
-                        <div class="nap-icon"><i class="fas fa-phone-alt"></i></div>
-                        <div class="nap-text">
-                            <h5>Phone Number</h5>
-                            <a href="tel:+919876543210">+91 98765 43210</a><br>
-                            <a href="tel:+919876543211">+91 98765 43211</a>
-                        </div>
-                    </div>
-                    
-                    <div class="nap-item">
-                        <div class="nap-icon"><i class="fas fa-envelope"></i></div>
-                        <div class="nap-text">
-                            <h5>Email Address</h5>
-                            <a href="mailto:info@maavaishnaviconstruction.in">info@maavaishnavi.in</a>
-                        </div>
-                    </div>
+      <div class="text-center mb-5">
+        <h2>Visit Our Office</h2>
+        <div style="
+              width: 60px;
+              height: 3px;
+              background-color: var(--accent-gold);
+              margin: 15px auto;
+            "></div>
+        <p class="text-muted">
+          We are always ready to help you with your real estate and
+          construction needs.
+        </p>
+      </div>
 
-                    <div class="nap-item mb-0">
-                        <div class="nap-icon"><i class="fas fa-clock"></i></div>
-                        <div class="nap-text">
-                            <h5>Working Hours</h5>
-                            <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: Closed</p>
-                        </div>
-                    </div>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-4">
+          <div class="nap-box">
+            <h3 class="fw-bold mb-4" style="font-family: &quot;Montserrat&quot;, sans-serif">
+              Contact Info
+            </h3>
 
-                </div>
-            </div>
-
-            <div class="col-lg-8">
-                <div class="map-wrapper">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115330.14725357997!2d81.7645161327179!3d25.435801083984632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534c9b20bd49f%3A0xa2237856ad4041a!2sPrayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ================== Footer Section Start ================== -->
- <footer class="footer-area">
-    <div class="container">
-        <div class="row g-4">
-            
-            <div class="col-lg-4 col-md-6">
-                <h3 class="footer-heading" style="font-size: 1.8rem; border: none; font-weight: 800;">
-                    AB <span style="color: var(--accent-gold);">Green Tech</span>
-                </h3>
-                <p class="mt-4 pe-lg-4">
-                    Delivering premium real estate and construction solutions. We build trust, quality, and excellence in every project to ensure long-term growth and satisfaction for our clients.
+            <div class="nap-item">
+              <div class="nap-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="nap-text">
+                <h5>Office Address</h5>
+                <p>
+                  123 Business Tower, Civil Lines,<br />Prayagraj, Uttar
+                  Pradesh 211001
                 </p>
-                <div class="footer-social">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+              </div>
             </div>
 
-            <div class="col-lg-2 col-md-6">
-                <h4 class="footer-heading text-uppercase fs-6">Quick Links</h4>
-                <ul class="footer-links mt-4">
-                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
-                    <li><a href="about-us.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                    <li><a href="realstate.html"><i class="fas fa-chevron-right"></i> Projects</a></li>
-                    <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
-                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
-                </ul>
+            <div class="nap-item">
+              <div class="nap-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="nap-text">
+                <h5>Phone Number</h5>
+                <a href="tel:+919876543210">+91 98765 43210</a><br />
+                <a href="tel:+919876543211">+91 98765 43211</a>
+              </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-                <h4 class="footer-heading text-uppercase fs-6">Top Pages</h4>
-                <ul class="footer-links mt-4">
-                    <li><a href="realstate.html"><i class="fas fa-chevron-right"></i> Real Estate</a></li>
-                    <li><a href="construction.html"><i class="fas fa-chevron-right"></i> Construction</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Field Workers</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy & Policy</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Term & Conditions</a></li>
-                </ul>
+            <div class="nap-item">
+              <div class="nap-icon"><i class="fas fa-envelope"></i></div>
+              <div class="nap-text">
+                <h5>Email Address</h5>
+                <a href="mailto:info@maavaishnaviconstruction.in">info@maavaishnavi.in</a>
+              </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-                <h4 class="footer-heading text-uppercase fs-6">Contact Info</h4>
-                <ul class="footer-links mt-4">
-                    <li>
-                        <a href="#"><i class="fas fa-map-marker-alt"></i> Civil Lines, Prayagraj, UP</a>
-                    </li>
-                    <li>
-                        <a href="tel:+919876543210"><i class="fas fa-phone-alt"></i> +91 98765 43210</a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@maavaishnaviconstruction.in"><i class="fas fa-envelope"></i> info@maavaishnaviconstruction.in</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 7:00 PM</a>
-                    </li>
-                </ul>
+            <div class="nap-item mb-0">
+              <div class="nap-icon"><i class="fas fa-clock"></i></div>
+              <div class="nap-text">
+                <h5>Working Hours</h5>
+                <p>Mon - Sat: 9:00 AM - 7:00 PM<br />Sunday: Closed</p>
+              </div>
             </div>
-
+          </div>
         </div>
 
-        <div class="footer-bottom">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p>&copy; 2026 <strong>AB Green Tech</strong>. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p>
-                        <a href="#">Privacy Policy</a> | 
-                        <a href="#">Terms & Conditions</a>
-                    </p>
-                </div>
-            </div>
+        <div class="col-lg-8">
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115330.14725357997!2d81.7645161327179!3d25.435801083984632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534c9b20bd49f%3A0xa2237856ad4041a!2sPrayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
+      </div>
     </div>
-</footer>
+  </section>
 
-<!-- ======= Floating Icons ========= -->
-<div class="floating-action-menu">
-  <a href="tel:+919876543210" class="floating-btn btn-call-floating d-flex d-md-none" aria-label="Call Us">
-    <i class="fa-solid fa-phone"></i>
-  </a>
+  <!-- ================== Footer Section Start ================== -->
+  <footer class="footer-area">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <h3 class="footer-heading" style="font-size: 1.8rem; border: none; font-weight: 800">
+            AB <span style="color: var(--accent-gold)">Green Tech</span>
+          </h3>
+          <p class="mt-4 pe-lg-4">
+            Delivering premium real estate and construction solutions. We
+            build trust, quality, and excellence in every project to ensure
+            long-term growth and satisfaction for our clients.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
 
-  <a href="https://wa.me/919876543210" target="_blank" class="floating-btn btn-whatsapp-floating" aria-label="WhatsApp Us">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-</div>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-heading text-uppercase fs-6">Quick Links</h4>
+          <ul class="footer-links mt-4">
+            <li>
+              <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+            </li>
+            <li>
+              <a href="about-us.html"><i class="fas fa-chevron-right"></i> About Us</a>
+            </li>
+            <li>
+              <a href="realstate.html"><i class="fas fa-chevron-right"></i> Projects</a>
+            </li>
+            <li>
+              <a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a>
+            </li>
+            <li>
+              <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a>
+            </li>
+          </ul>
+        </div>
 
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading text-uppercase fs-6">Top Pages</h4>
+          <ul class="footer-links mt-4">
+            <li>
+              <a href="realstate.html"><i class="fas fa-chevron-right"></i> Real Estate</a>
+            </li>
+            <li>
+              <a href="construction.html"><i class="fas fa-chevron-right"></i> Construction</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-chevron-right"></i> Field Workers</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-chevron-right"></i> Privacy & Policy</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-chevron-right"></i> Term & Conditions</a>
+            </li>
+          </ul>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/script.js"></script>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading text-uppercase fs-6">Contact Info</h4>
+          <ul class="footer-links mt-4">
+            <li>
+              <a href="#"><i class="fas fa-map-marker-alt"></i> Civil Lines, Prayagraj,
+                UP</a>
+            </li>
+            <li>
+              <a href="tel:+919876543210"><i class="fas fa-phone-alt"></i> +91 98765 43210</a>
+            </li>
+            <li>
+              <a href="mailto:info@maavaishnaviconstruction.in"><i class="fas fa-envelope"></i>
+                info@maavaishnaviconstruction.in</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 7:00 PM</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p>
+              &copy; 2026 <strong>AB Green Tech</strong>. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p>
+              <a href="#">Privacy Policy</a> |
+              <a href="#">Terms & Conditions</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======= Floating Icons ========= -->
+  <div class="floating-action-menu">
+    <a href="tel:+919876543210" class="floating-btn btn-call-floating d-flex d-md-none" aria-label="Call Us">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a href="https://wa.me/919876543210" target="_blank" class="floating-btn btn-whatsapp-floating"
+      aria-label="WhatsApp Us">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/script.js"></script>
 </body>
+
 </html>
