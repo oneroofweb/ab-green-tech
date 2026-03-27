@@ -238,7 +238,7 @@ html {
       color: var(--accent-gold);
     }
 
-    
+
 /* ============================================ 
    4. PROJECT CARDS & SMALL SLIDER
    ============================================ */
@@ -875,51 +875,6 @@ html {
 }
 
 /* ============================================ 
-   Page - smart-irrigation.html
-   ============================================ */
-
-/* Breadcrumb arrow overrides */
-.page-hero .breadcrumb-item + .breadcrumb-item::before {
-    content: "›"; 
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1.2rem;
-    line-height: 1;
-}
-
-.page-hero .breadcrumb-item a:hover {
-    color: var(--accent-gold) !important;
-}
-
-/* Process Step Connecting Lines */
-.process-step:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    left: 24px; /* Centers the line exactly under the 50px circle */
-    top: 50px;
-    width: 2px;
-    height: calc(100% - 10px);
-    background-color: #e9ecef; /* Light gray line connecting steps */
-    z-index: 1;
-}
-
-/* Custom Input styling for the Lead Form */
-.custom-input {
-    padding: 12px 15px;
-    border-radius: 6px;
-    border: 1px solid #dee2e6 ;
-    font-size: 0.95rem;
-    color: var(--text-main);
-    background-color: #f8f9fa;
-    transition: all 0.3s ease;
-}
-
-.custom-input:focus {
-    background-color: #ffffff;
-    border-color: var(--ab-green);
-    box-shadow: 0 0 0 0.25rem rgba(20, 108, 54, 0.15);
-}
-
-/* ============================================ 
    Brands We Represent Section
    ============================================ */
 
@@ -941,14 +896,14 @@ html {
 .custom-separator .dot {
     width: 6px;
     height: 6px;
-    background-color: #3b82f6; /* Blue matching the image */
+    background-color: #f27233; /* Blue matching the image */
     border-radius: 50%;
 }
 
 .custom-separator .line {
     width: 60px;
     height: 4px;
-    background-color: #3b82f6; /* Blue matching the image */
+    background-color: #f27233; /* Blue matching the image */
     border-radius: 2px;
     margin-left: 2px;
 }
@@ -1020,5 +975,83 @@ html {
         width: calc(50% - 7.5px);
         min-width: unset; 
         height: 70px;
+    }
+}
+
+
+/* ============================================ 
+   Page - smart-irrigation.html
+   ============================================ */
+
+/* Typography & Helpers */
+.tracking-wide { letter-spacing: 2px; }
+.tracking-wider { letter-spacing: 1px; }
+
+.custom-line-height {
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.text-justify {
+    text-align: justify;
+    
+}
+
+/* 1. Hero Section */
+.service-hero {
+    position: relative;
+    height: 55vh;           
+    min-height: 400px;      
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    /* Uses your brand's dark green mixed with black for readability */
+    background: linear-gradient(to bottom, rgba(20, 108, 54, 0.75), rgba(15, 41, 66, 0.85)); 
+    z-index: 1;
+}
+
+/* Custom Breadcrumb Arrow */
+.service-hero .breadcrumb-item + .breadcrumb-item::before {
+    content: "›"; 
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.service-hero .breadcrumb-item a:hover {
+    color: var(--accent-gold) !important;
+}
+
+/* 2. Two-Column Image Wrapper */
+.image-wrapper img {
+    transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.03); 
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* 3. Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .service-hero {
+        height: 45vh;
+        min-height: 350px;
+    }
+    
+    .service-hero h1.display-4 {
+        font-size: 2.2rem; 
+    }
+    
+    .image-wrapper img {
+        height: 300px !important; 
     }
 }
