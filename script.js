@@ -47,19 +47,48 @@ function loadMoreContent(btn) {
 /* ============================================ 
      Gallery - Lightbox Effect
    ============================================ */
-  document.addEventListener('DOMContentLoaded', () => {
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    const lightboxImage = document.getElementById('lightboxImage');
 
-    galleryItems.forEach(item => {
-      item.addEventListener('click', function() {
-        // Find the image inside the clicked div
-        const imgElement = this.querySelector('img');
-        // Copy that image's source into the popup modal
-        if (imgElement) {
-          lightboxImage.src = imgElement.src;
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // --- 1. FILTER FUNCTIONALITY ---
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const galleryWraps = document.querySelectorAll(".gallery-wrap");
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener("click", function() {
+        
+        // Remove active class from all buttons
+        filterBtns.forEach(b => b.classList.remove("active"));
+        // Add active class to clicked button
+        this.classList.add("active");
+
+        const filterValue = this.getAttribute("data-filter");
+
+        // Loop through items and show/hide based on category
+        galleryWraps.forEach(wrap => {
+          if (filterValue === "all" || wrap.getAttribute("data-category") === filterValue) {
+            wrap.classList.remove("hide");
+            wrap.style.opacity = "0";
+            setTimeout(() => { wrap.style.opacity = "1"; }, 50);
+          } else {
+            wrap.classList.add("hide");
+          }
+        });
+      });
+    });
+
+    // --- 2. LIGHTBOX IMAGE CLICK FUNCTIONALITY ---
+    const galleryBoxes = document.querySelectorAll(".gallery-item");
+    const lightboxImage = document.getElementById("lightboxImage");
+
+    galleryBoxes.forEach(box => {
+      box.addEventListener("click", function() {
+        const imgInside = this.querySelector("img");
+        if (imgInside) {
+          lightboxImage.src = imgInside.src;
         }
       });
     });
+
   });
 

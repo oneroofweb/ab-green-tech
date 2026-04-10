@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | AB Green Tech</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Contact Form Specific Overrides to match theme */
+    .contact-form-wrapper {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .form-control:focus, .form-select:focus {
+      border-color: var(--ab-green);
+      box-shadow: 0 0 0 0.25rem rgba(20, 108, 54, 0.15);
+    }
+
+    .form-floating > label {
+      color: var(--text-muted);
+    }
+
+    .map-full-width {
+      border-radius: 10px;
+      overflow: hidden;
+      height: 450px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      border: 2px solid rgba(15, 41, 66, 0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/ABGreenTech_logo.jpg" alt="AB Greentech Logo" height="60" width="auto" />
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="expertiseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Expertise
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="expertiseDropdown">
+              <li><a class="dropdown-item" href="smart-irrigation.html">IRRIGATION SYSTEMS</a></li>
+              <li><a class="dropdown-item" href="water-fountain.html">FOUNTAIN & WATER FEATURES</a></li>
+              <li><a class="dropdown-item" href="pool.html">SWIMMING POOLS</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PRODUCTS
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item text-uppercase" href="smart-irrigation.html">Irrigation Equipments</a></li>
+              <li><a class="dropdown-item text-uppercase" href="water-fountain.html">WATER FOUNTAIN Equipments</a></li>
+              <li><a class="dropdown-item text-uppercase" href="pool.html">SWIMMING Equipments </a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="design-services.html">Design Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-block">
+        <a href="contact.html" class="btn btn-ab-theme">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="service-hero d-flex align-items-center justify-content-center text-center" style="background-image: url('https://blurain.in/wp-content/uploads/2024/10/slider-2.webp');">
+    <div class="hero-overlay"></div>
+    <div class="position-relative z-3 text-white">
+      <h1 class="display-4 fw-bold mb-3" style="font-family: 'Montserrat', sans-serif;">Contact Us</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li class="breadcrumb-item active text-white-50" aria-current="page">Contact Us</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="py-5 sec-color">
+    <div class="container py-5">
+      
+      <div class="text-center mb-5">
+        <h2 class="fw-bold" style="color: var(--primary-navy);">Get In Touch</h2>
+        <div style="width: 60px; height: 3px; background-color: var(--accent-gold); margin: 15px auto;"></div>
+        <p class="text-muted mx-auto" style="max-width: 600px;">
+          Have a project in mind or need assistance with your irrigation, fountain, or pool systems? Drop us a message, and our experts will get back to you promptly.
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        
+        <div class="col-lg-7">
+          <div class="contact-form-wrapper p-4 p-md-5 h-100">
+            <h4 class="fw-bold mb-4" style="color: var(--ab-green);">Send a Message</h4>
+            
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control bg-light border-0" id="name" placeholder="Your Name" required>
+                    <label for="name">Full Name</label>
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="tel" class="form-control bg-light border-0" id="phone" placeholder="Phone Number" required>
+                    <label for="phone">Phone Number</label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="email" class="form-control bg-light border-0" id="email" placeholder="Email Address" required>
+                    <label for="email">Email Address</label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-floating">
+                    <select class="form-select bg-light border-0" id="service" required>
+                      <option selected disabled value="">Select Service</option>
+                      <option value="Smart Irrigation">Smart Irrigation System</option>
+                      <option value="Water Fountain">Water Fountain Design</option>
+                      <option value="Swimming Pool">Swimming Pool Construction</option>
+                      <option value="Equipment Supply">Product / Equipment Supply</option>
+                      <option value="Other">Other Inquiry</option>
+                    </select>
+                    <label for="service">I am interested in</label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control bg-light border-0" id="message" placeholder="Write your message here" style="height: 150px" required></textarea>
+                    <label for="message">Your Message / Requirements</label>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-ab-theme w-100 py-3 rounded">
+                    Submit Request <i class="fa-solid fa-paper-plane ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="nap-box">
+            <h3 class="fw-bold mb-4" style="font-family: 'Montserrat', sans-serif">
+              Contact Info
+            </h3>
+
+            <div class="nap-item">
+              <div class="nap-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="nap-text">
+                <h5>Office Address</h5>
+                <p>House No. 191, Street No. L-2 Battery Factory Yashvi Society, Ladian Kalan, Ludhiana Punjab - 141008</p>
+              </div>
+            </div>
+
+            <div class="nap-item">
+              <div class="nap-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="nap-text">
+                <h5>Phone Number</h5>
+                <a href="tel:+918777747277">+91 8777747277</a><br />
+              </div>
+            </div>
+
+            <div class="nap-item">
+              <div class="nap-icon"><i class="fas fa-envelope"></i></div>
+              <div class="nap-text">
+                <h5>Email Address</h5>
+                <a href="mailto:abgreentech7@gmail.com">abgreentech7@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="nap-item mb-0">
+              <div class="nap-icon"><i class="fas fa-clock"></i></div>
+              <div class="nap-text">
+                <h5>Working Hours</h5>
+                <p>Mon - Sat: 9:00 AM - 7:00 PM<br />Sunday: Closed</p>
+              </div>
+            </div>
+            
+            <div class="mt-4 pt-3 border-top border-secondary border-opacity-25 d-flex gap-3">
+              <a href="#" class="text-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; transition: 0.3s;" onmouseover="this.style.background='var(--accent-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; transition: 0.3s;" onmouseover="this.style.background='var(--accent-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; transition: 0.3s;" onmouseover="this.style.background='var(--accent-gold)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-5 sec-color">
+    <div class="container">
+      <div class="map-full-width w-100">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115330.14725357997!2d81.7645161327179!3d25.435801083984632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534c9b20bd49f%3A0xa2237856ad4041a!2sPrayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-area">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <h3 class="footer-heading" style="font-size: 1.8rem; border: none; font-weight: 800">
+            AB <span style="color: var(--accent-gold)">GreenTech</span>
+          </h3>
+          <p class="mt-4 pe-lg-4">
+           AB Greentech provides advanced irrigation systems, swimming pools, and water fountain solutions across Punjab and India, delivering modern, efficient, and high-quality water projects.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-heading text-uppercase fs-6">Quick Links</h4>
+          <ul class="footer-links mt-4">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Projects</a></li>
+            <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading text-uppercase fs-6">Our Expertise</h4>
+          <ul class="footer-links mt-4">
+            <li><a href="smart-irrigation.html"><i class="fas fa-chevron-right"></i> Irrigation & Sprinkler Systems</a></li>
+            <li><a href="pool.html"><i class="fas fa-chevron-right"></i> Swimming Pool Solutions</a></li>
+            <li><a href="water-fountain.html"><i class="fas fa-chevron-right"></i> Water Fountain Systems</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading text-uppercase fs-6">Contact Info</h4>
+          <ul class="footer-links mt-4">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i>House No.191, Street No. L-2 Battery Factory Yashvi Society, Ladian Kalan, Ludhiana Punjab - 141008</a></li>
+            <li><a href="tel:+918777747277"><i class="fas fa-phone-alt"></i> +91 8777747277</a></li>
+            <li><a href="mailto:abgreentech7@gmail.com"><i class="fas fa-envelope"></i> abgreentech7@gmail.com</a></li>
+            <li><a href="#"><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 7:00 PM</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p>©2026 <strong>AB GreenTech</strong>. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p>
+              <a href="#">Privacy Policy</a> |
+              <a href="#">Terms & Conditions</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-action-menu">
+    <a href="tel:+918777747277" class="floating-btn btn-call-floating d-flex d-md-none" aria-label="Call Us">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <a href="https://wa.me/918777747277" target="_blank" class="floating-btn btn-whatsapp-floating" aria-label="WhatsApp Us">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
