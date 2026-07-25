@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;600;700;800&display=swap');
+
 /* ============================================ 
    1. GLOBAL VARIABLES & RESET
    ============================================ */
@@ -5,12 +7,13 @@
   /* AB Green Tech Brand Colors */
   --ab-green: #146c36;
   --ab-orange: #f27233;
+  --ab-orange-hover: #d15a20;
   --ab-blue: #40a0db;
 
   /* UI Theme Colors */
-  --primary-navy: #0f2942;
-  --accent-gold: #f39c12;
-  --accent-gold-hover: #d68910;
+  --primary-navy: var(--ab-green);
+  --accent-gold: var(--ab-orange);
+  --accent-gold-hover: var(--ab-orange-hover);
   --light-bg: #f8f9fa;
   --text-main: #4a4a4a;
   --text-muted: #6c757d;
@@ -21,12 +24,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+p{
+  font-size: 0.9rem;
+}
 
 body,
 html {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, .heading-font, .section-title, .hero-heading {
+  font-family: "Playfair Display", serif;
 }
 
 .sec-color {
@@ -53,11 +63,11 @@ html {
 }
 
 .nav-link {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 600;
   color: var(--ab-green) !important;
   margin: 0 12px;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: color 0.3s ease;
@@ -73,8 +83,11 @@ html {
 }
 
 .dropdown-item {
-  font-weight: 500;
+  font-weight: 200;
   color: var(--ab-green);
+}
+.dropdown-menu>li>a{
+  font-size: 0.8rem;
 }
 
 .dropdown-item:hover {
@@ -766,7 +779,7 @@ html {
 
 .footer-heading {
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   margin-bottom: 20px;
   position: relative;
@@ -1289,7 +1302,7 @@ html {
         position: relative;
         width: 300px;
         height: 2px;
-        background-color: #d1d8dd;
+        background-color: var(--accent-gold);
         margin: 0 auto 60px;
       }
       .custom-divider::after {
@@ -1300,7 +1313,7 @@ html {
         transform: translate(-50%, -50%) rotate(45deg);
         width: 12px;
         height: 12px;
-        background-color: #d1d8dd;
+        background-color: var(--accent-gold);
       }
 
       /* --- ICON BOX STYLING --- */
@@ -1317,15 +1330,15 @@ html {
 
       .icon-box:hover {
         transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(29, 107, 186, 0.1);
-        border-color: rgba(29, 107, 186, 0.2);
+        box-shadow: 0 15px 30px rgba(20, 108, 54, 0.1);
+        border-color: var(--primary-navy);
       }
 
-      /* Circular Blue Icon */
+      /* Circular Theme Icon */
       .icon-wrapper {
         width: 80px;
         height: 80px;
-        background-color: #1d6bba;
+        background-color: var(--primary-navy);
         color: #fff;
         border-radius: 50%;
         display: flex;
@@ -1333,7 +1346,7 @@ html {
         justify-content: center;
         font-size: 32px;
         margin: 0 auto 20px; /* Center alignment */
-        box-shadow: 0 6px 15px rgba(29, 107, 186, 0.3);
+        box-shadow: 0 6px 15px rgba(20, 108, 54, 0.3);
         transition: transform 0.3s ease;
       }
       
@@ -1348,6 +1361,7 @@ html {
         color: #4a5568;
         line-height: 1.6;
         margin: 0;
+        text-align: center !important;
       }
 
       @media (max-width: 768px) {
